@@ -1,0 +1,223 @@
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.bigTitle {
+  position: absolute;
+  top: 40%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Luckiest Guy', sans-serif;
+  font-size: 9.5rem;
+  z-index: 1;
+  color: #000;
+  line-height: 0.8;
+  pointer-events: auto;
+  letter-spacing: 7px;
+}
+
+.letter {
+    display: inline-block;
+  margin: 0 -6px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.letter:hover {
+  opacity: 0.2;
+}
+
+/* Unika positioner */
+.p  { transform: rotate(-12deg) translateY(10px) translateX(30px); }
+.o1 { transform: rotate(-8deg)  translateY(60px); }
+.r  { transform: rotate(30deg)  translateY(-25px) translateX(-30px); }
+.t  { transform: rotate(-10deg) translateY(10px); }
+.f  { transform: rotate(-5deg)  translateY(-60px); }
+.o2 { transform: rotate(20deg)  translateY(5px); }
+.l  { transform: rotate(15deg)  translateY(20px); }
+.i  { transform: rotate(17deg)  translateY(-10px) translateX(-20px); }
+.o3 { transform: rotate(-3deg)  translateY(50px) translateX(-30px); }
+
+.year {
+  
+  position: absolute;
+  top: 30%;
+  left: 62%;
+  font-size: 3rem;
+  color: #b7a78f;
+  z-index: 3;
+}
+
+.centerImgWrapper {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.centerImg {
+  width: 420px;
+}
+
+.authorName {
+  font-weight: bold;
+  position: absolute;
+  top: 70%;
+  left: 25.5%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  color: #b7a78f;
+  z-index: 3;
+}
+
+.heroDecor {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.circle,
+.oval {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.25;
+}
+
+.beige {
+  background-color: #d9cbb2;
+}
+.brown {
+  background-color: #7e6651;
+}
+.dark {
+  background-color: #40352c;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+}
+
+.oval {
+  width: 280px;
+  height: 280px;
+
+}
+
+.circle.beige {
+  top: 10%;
+  left: 5%;
+}
+.oval.brown {
+  bottom: 15%;
+  right: 10%;
+}
+.circle.dark.stacked1 {
+  top: 20%;
+  right: 25%;
+}
+.circle.brown.stacked2 {
+  top: 22%;
+  right: 27%;
+  width: 70px;
+  height: 70px;
+}
+.oval.beige.sideOval1 {
+  top: 70%;
+  left: -30px;
+  transform: rotate(-20deg);
+}
+.oval.dark.sideOval2 {
+  top: 15%;
+  right: -40px;
+  transform: rotate(5deg);
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 6vh 1rem 10vh;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+.bigTitle {
+  font-size: 3rem;
+  position: relative;
+  top: 5rem; 
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+  .year {
+    position: relative;
+    top: auto;
+    left: 4rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    color: #b7a78f;
+    align-self: center;
+  }
+
+  .centerImgWrapper {
+    position: relative;
+    margin-top: 2rem;
+    transform: none;
+    left: auto;
+    bottom: auto;
+  }
+
+  .centerImg {
+    width: 280px;
+  }
+
+  .authorName {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    text-align: center;
+    line-height: 1.3;
+    white-space: normal;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .oval {
+    width: 130px;
+    height: 130px;
+  }
+
+  .circle.brown.stacked2 {
+    width: 35px;
+    height: 35px;
+  }
+
+  .p  { transform: rotate(-12deg) translateY(3px) translateX(6px); }
+  .o1 { transform: rotate(-8deg)  translateY(20px); }
+  .r  { transform: rotate(30deg)  translateY(-10px) translateX(-10px); }
+  .t  { transform: rotate(-10deg) translateY(5px); }
+  .f  { transform: rotate(-5deg)  translateY(-20px); }
+  .o2 { transform: rotate(20deg)  translateY(3px); }
+  .l  { transform: rotate(15deg)  translateY(8px); }
+  .i  { transform: rotate(17deg)  translateY(-4px) translateX(-7px); }
+  .o3 { transform: rotate(-3deg)  translateY(18px) translateX(-10px); }
+}
