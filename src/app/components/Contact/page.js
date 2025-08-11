@@ -89,7 +89,7 @@ export default function ContactForm() {
 
           <div className={styles.infoBox}>
             <strong>Email</strong>
-            <p>isabelle.ibrahimsson@outlook.com</p>
+            <p>bella.ibrahimsson@hotmail.com</p>
             <span>Response within 24 hours</span>
           </div>
 

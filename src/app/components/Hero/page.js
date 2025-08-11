@@ -29,7 +29,7 @@ export default function Hero() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1 }}
       >
-        ’25
+        ’26
       </motion.span>
 
       <motion.div
@@ -82,6 +82,33 @@ export default function Hero() {
           transition={{ duration: 7.5, repeat: Infinity, ease: 'easeInOut' }}
         />
       </motion.div>
+      <motion.div
+  className={styles.buttonGroup}
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 1.6 }}
+>
+  <a
+    href="/files/cv.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className={styles.heroBtn}
+    aria-label="Öppna mitt CV i ny flik"
+  >
+    📄 View CV
+  </a>
+<a
+  href="https://www.linkedin.com/in/isabelle-ibrahimsson"
+  target="_blank"
+  rel="noopener noreferrer"
+  className={styles.heroBtnOutline}
+  aria-label="Öppna min LinkedIn i ny flik"
+>
+  💼 LinkedIn
+</a>
+
+</motion.div>
+
     </motion.div>
   );
 }
