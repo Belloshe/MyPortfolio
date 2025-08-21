@@ -18,20 +18,21 @@
 }
 
 .photoBadge {
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
-}
-
-.photo {
   background-color: #9c8f84ee;
   border-top-left-radius: 100% 200px;
   border-top-right-radius: 100% 200px;
-  width: 100%;
-  border-radius: 1rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  filter: brightness(1.15) contrast(1.05) saturate(1.1);
+    border-radius: 1rem;
+    width: 30%;
 }
+
+.photo {
+  width: 100%;
+  filter: brightness(1.15) contrast(1.05) saturate(1.1);
+  margin-left: 5px;
+}
+
+
 
 .content {
   flex: 2;

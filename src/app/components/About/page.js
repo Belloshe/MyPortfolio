@@ -17,9 +17,10 @@ export default function About() {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
-        <div className={styles.photoBadge}>
-          <img src="/images/isabelle-badge.png" alt="Isabelle" className={styles.photo} />
-        </div>
+    <div className={styles.photoBadge}>
+  <img src="/images/isabelle-badge.png" alt="Isabelle" className={styles.photo} />
+</div>
+
 
         <div className={styles.content}>
           <motion.h2
